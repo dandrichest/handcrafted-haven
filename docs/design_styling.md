@@ -1,31 +1,185 @@
-# Design & Styling Identity (Planning)
+# Design Decisions – Handcrafted Haven (Planning)
 
-## Overall Style
-Handcrafted Haven should feel warm, friendly, and “handmade”, but still clean and easy to use.  
-We want a simple layout with clear buttons, readable text, and product cards that are easy to scan.
+> Goal: Decide the visual style and user experience basics before building.  
+> This document is a planning guide and can be updated during the project.
 
-## Color Theme (Proposed)
-- **Primary color:** Warm Brown / Earth tone (used for main buttons, links, highlights)
-- **Accent color:** Soft Green or Terracotta (used for small highlights, badges, ratings)
-- **Background:** Light neutral (off-white / light beige)
-- **Text color:** Dark gray (better readability than pure black)
+---
 
-*(Exact hex codes can be chosen later, but the theme will stay consistent.)*
+## 1) Brand & Mood
+**What should the website feel like?** (circle or write)
+- Warm / Handmade / Cozy
+- Clean / Modern / Minimal
+- Premium / Elegant
+- Fun / Colorful
 
-## Typography (Proposed)
-- **Font:** A clean and readable sans-serif font (e.g., Inter, Roboto, or system-ui)
-- **Headings:** Slightly larger and bold for clear page structure
-- **Body text:** Simple and readable size for product descriptions and reviews
+**Short brand description (1–2 sentences):**  
+-
 
-## UI Elements (Basic Rules)
-- **Buttons:** Rounded corners, clear hover/focus styles, strong contrast
-- **Cards:** Product cards with light border/shadow, consistent spacing, clear image area
-- **Forms:** Clear labels, helpful error messages, and accessible input fields
-- **Navigation:** Simple top navigation with consistent placement across pages
+**Target users:**
+- Shoppers (browse + buy handmade items)
+- Sellers (manage listings + profile)
 
-## Accessibility & Responsiveness (Plan)
-- Keyboard navigation should work on all pages.
-- All form inputs should have labels.
-- Images should include alt text.
-- Color contrast should be strong enough for readability.
-- Layout should work well on mobile, tablet, and desktop.
+---
+
+## 2) Color Palette
+**Primary color (main buttons/links):**  
+- Name:  
+- Hex:  
+
+**Secondary / Accent color (badges/highlights):**  
+- Name:  
+- Hex:  
+
+**Background color:**  
+- Hex:  
+
+**Text color:**  
+- Hex:  
+
+**Extra colors (optional):**
+- Success:  
+- Warning:  
+- Error:  
+
+**Accessibility check (WCAG):**
+- Primary text has good contrast on background: Yes / No  
+- Button text has good contrast on button color: Yes / No
+
+---
+
+## 3) Typography
+**Main font (body text):**  
+- (e.g., Inter, Roboto, system-ui)
+
+**Heading style:**
+- H1 size:  
+- H2 size:  
+- Weight:  
+
+**Body text size (default):**  
+- (example: 16px / 1rem)
+
+**Line spacing (readability):**  
+- (example: 1.5)
+
+---
+
+## 4) Layout & Navigation (Structure, not a detailed sketch)
+**Main navigation items (top menu):**
+- Home
+- Catalog
+- Seller Profiles (optional)
+- Login / Register
+- Seller Dashboard (seller only)
+
+**Header includes:**
+- Logo / site name
+- Search (optional)
+- Login/User menu
+
+**Footer includes:**
+- About / Contact (optional)
+- Terms / Privacy (optional)
+- Social links (optional)
+
+**General page layout idea:**
+- Catalog uses a grid of product cards: Yes / No  
+- Filters appear: Left sidebar / Top bar / Collapsible on mobile
+
+---
+
+## 5) Core UI Components (Consistency)
+**Buttons**
+- Shape: Rounded / Slightly rounded / Square  
+- Primary button style:  
+- Secondary button style:  
+
+**Cards**
+- Product card includes: image, title, price, rating, category  
+- Card style: border / shadow / both / none  
+
+**Forms**
+- Inputs have labels (not only placeholders): Yes / No  
+- Error messages style: short and clear
+
+**Icons**
+- Use icons? Yes / No  
+- Icon style: simple line icons / filled / mixed
+
+---
+
+## 6) Imagery & Graphics
+**Product images**
+- Aspect ratio: square / 4:3 / 16:9  
+- Image quality guideline: clear, good light, no huge file sizes
+
+**Brand visuals**
+- Logo: text-only / simple icon + text / TBD  
+- Hero image on home page: Yes / No / Later
+
+---
+
+## 7) Responsive Design Rules
+**Breakpoints (basic):**
+- Mobile
+- Tablet
+- Desktop
+
+**Mobile-first decisions:**
+- Navigation becomes hamburger menu on mobile: Yes / No  
+- Filters become collapsible on mobile: Yes / No  
+- Cards per row:
+  - Mobile: 1
+  - Tablet: 2
+  - Desktop: 3–4
+
+---
+
+## 8) Accessibility (WCAG 2.1 AA Basics)
+Checklist:
+- Keyboard navigation works on all pages
+- Focus indicator is visible
+- Labels for all form fields
+- Alt text for images
+- Color contrast checked
+- Buttons/links have clear names (not “click here”)
+
+Notes / decisions:
+-
+
+---
+
+## 9) SEO & Usability Basics
+**SEO**
+- Each page has a clear title
+- Good heading structure (H1, H2, H3)
+- Clean URLs (e.g., `/products/123`)
+
+**Usability**
+- Clear calls-to-action (“Add Product”, “Write a Review”)
+- Helpful empty states (e.g., “No products found”)
+- Friendly error messages
+
+Notes / decisions:
+-
+
+---
+
+## 10) Final Decisions (Summary)
+**Final mood/style chosen:**  
+-
+
+**Final colors chosen (hex):**
+- Primary:
+- Accent:
+- Background:
+- Text:
+
+**Final font chosen:**  
+-
+
+**Navigation items confirmed:**  
+-
+
+**Anything still TBD:**  
+-
