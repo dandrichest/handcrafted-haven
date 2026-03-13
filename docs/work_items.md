@@ -27,7 +27,7 @@ Group requirements this week
 Steven (integration / devops)
 - Make sure the Next.js project is pushed to GitHub and deploys on Vercel.
 - Confirm Vercel settings (root directory correct, build passes).
-- Add `web/.env.example` (no real secrets).
+- Add web/.env.
 - Keep the project board organized and make sure Week 1 tasks are listed.
 
 Olaniyi (frontend)
@@ -37,7 +37,7 @@ Olaniyi (frontend)
 
 Daniel (backend)
 - Pick the database option (MongoDB or Postgres) and test the connection.
-- Write `docs/models.md` (Seller, Product, Review fields).
+- Write docs/models.md (Seller, Product, Review fields).
 - Start API route skeletons (even simple placeholder responses).
 - Start auth/roles plan (seller vs user).
 
