@@ -32,7 +32,7 @@
 
 .panelText {
   margin: 0 0 1rem;
-  color: #64748b;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@
   padding: 1rem;
   border: 1px dashed #cbd5e1;
   border-radius: 12px;
-  color: #64748b;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .imageFallback {
-  color: #64748b;
+  color: var(--text-color);
   font-size: 0.95rem;
   text-align: center;
   padding: 0.5rem;
@@ -121,7 +121,7 @@
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
   background: #eff6ff;
-  color: #1d4ed8;
+  color: var(--accent);
   font-size: 0.85rem;
   font-weight: 600;
 }
@@ -226,7 +226,7 @@
 
 .helperText {
   margin: -0.4rem 0 0;
-  color: #64748b;
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
@@ -245,8 +245,12 @@
 .backLink {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #1d4ed8;
+  color: var(--accent);
   text-underline-offset: 2px;
+}
+
+.backLink:hover {
+    color: var(--text-color);
 }
 
 @media (max-width: 640px) {
