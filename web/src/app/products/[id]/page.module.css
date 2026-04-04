@@ -7,7 +7,7 @@
 .backLink {
   display: inline-block;
   margin-bottom: 1.25rem;
-  color: #1d4ed8;
+  color: var(--accent);
   text-underline-offset: 2px;
 }
 
@@ -60,7 +60,7 @@
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   background: #eff6ff;
-  color: #1d4ed8;
+  color: var(--accent);
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -102,8 +102,12 @@
 }
 
 .sellerLink {
-  color: #1d4ed8;
+  color: var(--accent);
   text-underline-offset: 2px;
+}
+
+.sellerLink:hover {
+    color: var(--text-color);
 }
 
 .reviews {
@@ -182,7 +186,7 @@
 
 .reviewHelper {
   margin: 0 0 1rem;
-  color: #64748b;
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -212,7 +216,7 @@
 
 .reviewDate {
   margin: 0;
-  color: #64748b;
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
