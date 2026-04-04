@@ -117,6 +117,17 @@ export default async function ProductDetailPage({
         </div>
 
         <div className={styles.panel}>
+          {canEditProduct ? (
+            <div className={styles.ownerActionRow}>
+              <Link
+                className={styles.ownerActionButton}
+                href={`/dashboard/products/${product.id}/edit`}
+              >
+                Edit Product
+              </Link>
+            </div>
+          ) : null}
+
           <p className={styles.category}>{formatCategory(product.category)}</p>
           <h1 className={styles.title}>{product.name}</h1>
           <p className={styles.price}>
@@ -139,14 +150,6 @@ export default async function ProductDetailPage({
                 >
                   View seller profile
                 </Link>
-                {canEditProduct ? (
-                  <Link
-                    className={styles.sellerLink}
-                    href={`/dashboard/products/${product.id}/edit`}
-                  >
-                    Edit Product
-                  </Link>
-                ) : null}
               </>
             ) : (
               <p className={styles.description}>Seller information is unavailable.</p>
