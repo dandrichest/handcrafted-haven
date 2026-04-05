@@ -84,7 +84,7 @@ export default function RegisterForm() {
   }
 
   return (
-    <main className={styles.main}>
+    <main id="main-content" className={styles.main}>
       <section className={styles.card}>
         <h1 className={styles.title}>Register</h1>
         <p className={styles.intro}>
@@ -153,8 +153,17 @@ export default function RegisterForm() {
             </select>
           </div>
 
-          {error && <p className={styles.error}>{error}</p>}
-          {success && <p className={styles.success}>{success}</p>}
+          {error && (
+            <p className={styles.error} role="alert">
+              {error}
+            </p>
+          )}
+
+          {success && (
+            <p className={styles.success} aria-live="polite">
+              {success}
+            </p>
+          )}
 
           <button className={styles.button} disabled={submitting} type="submit">
             {submitting ? "Creating Account..." : "Create Account"}

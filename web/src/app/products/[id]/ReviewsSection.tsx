@@ -205,7 +205,11 @@ export default function ReviewsSection({
           <h3 className={styles.reviewSectionHeading}>What customers are saying</h3>
 
           {loading && <p className={styles.reviewsText}>Loading reviews...</p>}
-          {!loading && error && <p className={styles.reviewError}>{error}</p>}
+          {!loading && error && (
+            <p className={styles.reviewError} role="alert">
+              {error}
+            </p>
+          )}
 
           {!loading && !error && reviews.length === 0 && (
             <p className={styles.reviewsText}>
@@ -286,7 +290,11 @@ export default function ReviewsSection({
               />
             </div>
 
-            {submitError && <p className={styles.reviewError}>{submitError}</p>}
+            {submitError && (
+              <p className={styles.reviewError} role="alert">
+                {submitError}
+              </p>
+            )}
 
             <button
               className={styles.reviewButton}

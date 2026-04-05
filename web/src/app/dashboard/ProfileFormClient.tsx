@@ -79,7 +79,7 @@ export default function ProfileFormClient({
   }
 
   return (
-    <main className={styles.main}>
+    <main id="main-content" className={styles.main}>
       <section className={styles.panel}>
         <div className={styles.pageHeader}>
           <div>
@@ -151,8 +151,17 @@ export default function ProfileFormClient({
             </p>
           </div>
 
-          {errorMessage && <p className={styles.errorText}>{errorMessage}</p>}
-          {successMessage && <p className={styles.successText}>{successMessage}</p>}
+          {errorMessage && (
+            <p className={styles.errorText} role="alert">
+              {errorMessage}
+            </p>
+          )}
+
+          {successMessage && (
+            <p className={styles.successText} aria-live="polite">
+              {successMessage}
+            </p>
+          )}
 
           <div className={styles.cardActions}>
             <button className={styles.button} disabled={submitting} type="submit">

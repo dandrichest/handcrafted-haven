@@ -296,7 +296,7 @@ export default function ProductFormClient({
 
   if (loadingProduct) {
     return (
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <section className={styles.panel}>
           <div className={styles.pageHeader}>
             <div>
@@ -313,7 +313,7 @@ export default function ProductFormClient({
   }
 
   return (
-    <main className={styles.main}>
+    <main id="main-content" className={styles.main}>
       <section className={styles.panel}>
         <div className={styles.pageHeader}>
           <div>
@@ -445,8 +445,17 @@ export default function ProductFormClient({
             <span>Product is in stock</span>
           </label>
 
-          {errorMessage && <p className={styles.errorText}>{errorMessage}</p>}
-          {statusMessage && <p className={styles.successText}>{statusMessage}</p>}
+          {errorMessage && (
+            <p className={styles.errorText} role="alert">
+              {errorMessage}
+            </p>
+          )}
+
+          {statusMessage && (
+            <p className={styles.successText} aria-live="polite">
+              {statusMessage}
+            </p>
+          )}
 
           <div className={styles.cardActions}>
             <button
@@ -460,9 +469,9 @@ export default function ProductFormClient({
                   : "Saving..."
                 : uploadingImage
                   ? "Uploading Image..."
-                : mode === "create"
-                  ? "Create Product"
-                  : "Save Changes"}
+                  : mode === "create"
+                    ? "Create Product"
+                    : "Save Changes"}
             </button>
             <button
               className={styles.secondaryButton}
